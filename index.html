@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="PayHive: The Jobber & ServiceTitan alternative that eliminates invoicing. Instant payment capture when jobs complete, ACH & card payments, customer self-onboarding, scheduling for residential service companies. Lawn care, cleaning, HVAC, pest control, and more."
+    />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Preload critical resources for faster LCP -->
+    <link rel="preconnect" href="https://js.stripe.com" />
+    <link rel="preconnect" href="https://m.stripe.network" />
+    <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+
+    <title>PayHive | Instant Payment Capture & Business Management for Home Service Businesses</title>
+    <link rel="canonical" href="https://thepayhive.com/" />
+    <meta name="keywords" content="Jobber alternative, ServiceTitan alternative, home service business software, residential service company software, lawn care software, field service management, ACH payments, customer self-onboarding, HVAC software, pest control software, cleaning business software, invoiceless payments, service business payments, scheduling software for contractors" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thepayhive.com/" />
+    <meta property="og:title" content="PayHive | Get Paid Instantly When Jobs Complete - No More Invoicing" />
+    <meta property="og:description" content="Eliminate invoicing for your home service business. PayHive's Invoiceless Architecture captures payment automatically when technicians complete jobs. ACH & card payments, customer self-onboarding, mobile scheduling." />
+    <meta property="og:site_name" content="PayHive" />
+    <meta property="og:image" content="https://thepayhive.com/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PayHive | Instant Payment Capture for Field Service" />
+    <meta name="twitter:description" content="Eliminate invoicing. Get paid automatically when technicians complete jobs with verified photo documentation. Built for lawn care, HVAC, cleaning, pest control." />
+    <meta name="twitter:image" content="https://thepayhive.com/og-image.png" />
+
+    <!-- Schema.org Structured Data for SEO/GEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://thepayhive.com/#organization",
+          "name": "PayHive",
+          "url": "https://thepayhive.com",
+          "logo": "https://thepayhive.com/logo.png",
+          "description": "PayHive provides instant payment capture, business management, CRM, and marketing tools for home service businesses. Our Invoiceless Architecture eliminates the invoice-payment cycle entirely.",
+          "sameAs": ["https://www.linkedin.com/company/payhive"],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "hello@thepayhive.com",
+            "contactType": "customer service"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://thepayhive.com/#application",
+          "name": "PayHive",
+          "url": "https://thepayhive.com",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, iOS, Android",
+          "description": "PayHive is the all-in-one business management platform for home service businesses. Our Invoiceless Architecture eliminates invoicing entirely - payment is captured automatically when technicians complete jobs with verified photo documentation. Features include ACH and card payments, customer self-onboarding, mobile scheduling, crew management, and cryptographically verified service records.",
+          "provider": {
+            "@id": "https://thepayhive.com/#organization"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free to start, transaction-based pricing"
+          },
+          "featureList": [
+            "Invoiceless Architecture - payment captured automatically when jobs complete",
+            "Instant payment capture with verified photo documentation",
+            "ACH and credit/debit card payment processing",
+            "Customer self-onboarding portals with payment pre-authorization",
+            "Mobile-first scheduling and dispatch",
+            "Crew management and time tracking",
+            "Route optimization",
+            "Customer portal with service history",
+            "Cryptographically verified service records",
+            "Gusto payroll integration",
+            "Direct mail marketing integration",
+            "Automated customer notifications"
+          ],
+          "audience": {
+            "@type": "BusinessAudience",
+            "audienceType": "Home service businesses: lawn care, landscaping, house cleaning, maid services, HVAC maintenance, pest control, pool service, pressure washing, window cleaning, painting, roofing, plumbing, electrical contractors"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://thepayhive.com/#website",
+          "url": "https://thepayhive.com",
+          "name": "PayHive",
+          "description": "Instant payment capture and business management for home service businesses",
+          "publisher": {
+            "@id": "https://thepayhive.com/#organization"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is PayHive?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PayHive is an all-in-one business management platform for home service businesses. It eliminates invoicing with our Invoiceless Architecture - customers pre-authorize payment, and funds are captured automatically when your technician completes the job and takes verification photos. No more sending invoices, waiting 30 days, or chasing payments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Invoiceless Architecture?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Invoiceless Architecture is PayHive's breakthrough approach that eliminates the invoice-payment cycle entirely. Instead of work → invoice → wait → chase → payment, customers pre-authorize payment during onboarding, and payment is triggered automatically when jobs are completed with photo verification. The invoice never exists because it doesn't need to."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does instant payment work in PayHive?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When your technician completes a job and captures verification photos, payment is automatically triggered based on your settlement rules. Customers pre-authorize payment during self-onboarding, so funds move the moment the work is verified. No invoices to send, no 30-day wait, no payment chasing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What payment methods does PayHive support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PayHive supports ACH bank transfers and credit/debit card payments via Stripe. ACH payments have lower processing fees than cards. Customers can set up autopay during self-onboarding, and payments are captured automatically when services are completed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does customer self-onboarding work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Share your custom PayHive signup link with new customers. They register themselves, add service addresses, select services, set up payment methods, and pre-authorize recurring charges - all without manual data entry by your team. You get a new customer ready to pay from day one."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What types of businesses use PayHive?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PayHive is built for recurring home service businesses including lawn care, landscaping, house cleaning, maid services, HVAC maintenance, pest control, pool service, pressure washing, window cleaning, painting, and other field service contractors who want to get paid faster."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are cryptographically verified service records?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every service record in PayHive - including photos, timestamps, GPS location, and job details - is hashed using SHA-256 and stored in a tamper-evident chain. This creates undeniable proof of what was done, when, and by whom. No more customer disputes about whether work was completed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does PayHive integrate with payroll?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, PayHive integrates directly with Gusto for payroll. Track crew hours, sync timecards automatically, and run payroll without manual data entry. Time tracked in PayHive flows directly to Gusto."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does PayHive have scheduling features?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, PayHive includes mobile-first scheduling with crew management, job assignment, route optimization, and real-time tracking. Technicians check in/out, record service details, capture photos, and trigger payment completion from their phone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can customers see their service history?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, PayHive provides a customer portal where clients can view complete service history with photos, upcoming appointments, payment history, manage payment methods, and approve quotes or service changes. Full transparency builds trust."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is PayHive a Jobber alternative?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. PayHive offers all the features you'd expect from Jobber - scheduling, invoicing, customer management, payments - but with one major advantage: Invoiceless Architecture. Instead of sending invoices and waiting to get paid, PayHive captures payment automatically when jobs are completed. No more chasing payments, no more 30-day waits. Plus, our customer self-onboarding gets new customers set up with autopay from day one."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is PayHive a ServiceTitan alternative?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. PayHive provides the core features residential service companies need - scheduling, dispatch, payments, customer management - without the complexity and high cost of ServiceTitan. PayHive is designed for growing service businesses that want modern payment technology (instant payment capture, ACH, customer self-onboarding) without enterprise-level pricing or implementation timelines."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is PayHive different from other field service software?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PayHive's key differentiator is Invoiceless Architecture - the invoice-payment cycle is eliminated entirely. Customers pre-authorize payment, technicians complete jobs with photo verification, and payment is captured automatically. No invoices, no waiting, no chasing. Other platforms still make you send invoices and hope customers pay. PayHive gets you paid the moment the work is done."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What residential service companies use PayHive?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PayHive is built for residential service companies including lawn care, landscaping, house cleaning, HVAC, pest control, pool service, pressure washing, window cleaning, and other recurring service businesses. If you do recurring work at residential properties and want to get paid faster, PayHive is built for you."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- ✅ Apollo Website Tracking -->
+    <script>
+      function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+      o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+      o.onload=function(){window.trackingFunctions.onLoad({appId:"6903a2be748ad300111ff892"})},
+      document.head.appendChild(o)}initApollo();
+    </script>
+    <!-- ✅ End Apollo Tracking -->
+  </head>
+
+  <body>
+    <!-- Content inside #root is visible to crawlers, then replaced by React when it loads -->
+    <div id="root">
+      <div style="max-width: 800px; margin: 60px auto; padding: 24px; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6;">
+        <header style="margin-bottom: 40px;">
+          <h1 style="font-size: 2.5rem; margin-bottom: 8px; color: #FFA11E;">PayHive</h1>
+          <p style="font-size: 1.25rem; color: #666;">Payment Processing & Business Management for Home Service Businesses</p>
+        </header>
+
+        <main>
+          <section style="margin-bottom: 32px;">
+            <h2>What is PayHive?</h2>
+            <p>PayHive is an all-in-one business management platform designed specifically for home service businesses like lawn care, cleaning, HVAC, pest control, and more. We combine payment processing, scheduling, customer management, and marketing tools in one easy-to-use platform built for the way you work.</p>
+          </section>
+
+          <section style="margin-bottom: 32px;">
+            <h2>Key Features</h2>
+            <ul style="padding-left: 20px;">
+              <li><strong>ACH & Card Payment Processing</strong> - Accept bank transfers and cards with competitive rates. ACH payments mean lower fees for your business.</li>
+              <li><strong>Customer Self-Onboarding</strong> - Share signup links where new customers register themselves, set up payment methods, and authorize recurring charges.</li>
+              <li><strong>Mobile-First Scheduling</strong> - Schedule jobs, manage crews, optimize routes, and track service completion from any device.</li>
+              <li><strong>Automated Invoicing</strong> - Generate and send invoices automatically after services are completed.</li>
+              <li><strong>Customer Portal</strong> - Give customers access to view service history, upcoming appointments, invoices, and manage their account.</li>
+              <li><strong>Crew Management</strong> - Assign jobs, track time, and enable field crews to check in, record service details, and capture photos.</li>
+              <li><strong>Service Records</strong> - Document every service with photos, notes, and timestamps for complete service history.</li>
+            </ul>
+          </section>
+
+          <section style="margin-bottom: 32px;">
+            <h2>Built for Home Service Businesses</h2>
+            <p>PayHive is purpose-built for recurring service providers including:</p>
+            <ul style="padding-left: 20px;">
+              <li>Lawn care and landscaping</li>
+              <li>House cleaning and maid services</li>
+              <li>HVAC maintenance</li>
+              <li>Pest control</li>
+              <li>Pool service and maintenance</li>
+              <li>Pressure washing</li>
+              <li>Window cleaning</li>
+              <li>And other field service businesses</li>
+            </ul>
+          </section>
+
+          <section style="margin-bottom: 32px;">
+            <h2>How It Works</h2>
+            <ol style="padding-left: 20px;">
+              <li>Create your PayHive account and set up your services</li>
+              <li>Share your custom signup link with new customers</li>
+              <li>Customers self-onboard and set up autopay</li>
+              <li>Schedule and complete services with mobile tools</li>
+              <li>Get paid automatically - no chasing invoices</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2>Get Started</h2>
+            <p>Ready to streamline your home service business? <a href="/get-started" style="color: #FFA11E;">Get started today</a> or <a href="/login" style="color: #FFA11E;">log in</a> to your account.</p>
+          </section>
+        </main>
+
+        <footer style="margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee; color: #666; font-size: 0.875rem;">
+          <p>&copy; 2026 PayHive. All rights reserved. | <a href="/legal/privacy" style="color: #666;">Privacy Policy</a> | <a href="/legal/terms" style="color: #666;">Terms of Service</a></p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Fallback when JavaScript is blocked (e.g., by ad blockers) -->
+    <noscript>
+      <div style="max-width: 400px; margin: 80px auto; padding: 24px; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+        <h1 style="font-size: 24px; margin-bottom: 16px;">PayHive requires JavaScript</h1>
+        <p style="color: #666; margin-bottom: 24px;">
+          It looks like JavaScript is disabled or blocked. Please enable JavaScript or disable any ad blockers for this site.
+        </p>
+        <a href="/app" style="display: inline-block; padding: 12px 24px; background: #f59e0b; color: white; text-decoration: none; border-radius: 8px;">
+          Try Again
+        </a>
+      </div>
+    </noscript>
+
+    <!-- Main entry for Vite app -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Fallback when main app fails to load (blocked by ad blocker, network error, etc.) -->
+    <script>
+      setTimeout(function() {
+        var root = document.getElementById('root');
+        if (root && root.children.length === 0) {
+          root.innerHTML = '<div style="max-width: 400px; margin: 80px auto; padding: 24px; text-align: center; font-family: system-ui, -apple-system, sans-serif;">' +
+            '<h1 style="font-size: 24px; margin-bottom: 16px;">Unable to load PayHive</h1>' +
+            '<p style="color: #666; margin-bottom: 24px;">This may be caused by an ad blocker or browser extension. Try disabling extensions for this site.</p>' +
+            '<a href="/app" style="display: inline-block; padding: 12px 24px; background: #f59e0b; color: white; text-decoration: none; border-radius: 8px;">Retry</a>' +
+            '</div>';
+        }
+      }, 3000);
+    </script>
+
+    <!-- PayHive Support Widget -->
+    <script src="https://payhive.support/widget.js"></script>
+  </body>
+</html>

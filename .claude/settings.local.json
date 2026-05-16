@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(curl:*)",
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "Bash(npm run build:*)",
+      "WebSearch",
+      "Bash(node --check:*)",
+      "Bash(xargs:*)",
+      "Bash(source:*)",
+      "Bash(psql:*)",
+      "Bash(command -v:*)",
+      "Bash(brew list:*)",
+      "Bash(node generate-sales-materials.js:*)",
+      "Bash(echo:*)",
+      "Bash(node -e:*)"
+    ]
+  }
+}

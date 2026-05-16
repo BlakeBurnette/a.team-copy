@@ -1,0 +1,71 @@
+{
+  "name": "bnk-pay",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@payhive/app-switcher": "file:./packages/app-switcher",
+    "@simplewebauthn/browser": "^13.2.2",
+    "@stripe/react-stripe-js": "^3.9.0",
+    "@stripe/stripe-js": "^7.8.0",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.11.0",
+    "chart.js": "^4.4.0",
+    "date-fns": "^4.1.0",
+    "h3-js": "^4.1.0",
+    "jspdf": "^3.0.2",
+    "lucide-react": "^0.537.0",
+    "mapbox-gl": "^2.15.0",
+    "postcss": "^8.4.31",
+    "qrcode.react": "^4.2.0",
+    "react": "18.3.1",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "18.3.1",
+    "react-markdown": "^10.1.0",
+    "react-plaid-link": "^3.6.1",
+    "react-router-dom": "^6.27.0",
+    "svg2pdf.js": "^2.5.0",
+    "tailwindcss": "^3.4.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "vite build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "vite",
+    "preview": "vite preview --port 3000",
+    "check:no-auth0": "rg -n \"useAuth0|getAccessTokenSilently|@auth0/auth0-react|Authorization:\\\\s*Bearer|AUTH0_\" src && exit 1 || exit 0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@prerenderer/prerenderer": "^1.2.5",
+    "@prerenderer/renderer-puppeteer": "^1.2.4",
+    "@prerenderer/rollup-plugin": "^0.3.12",
+    "@vitejs/plugin-react": "^4.7.0",
+    "@vitejs/plugin-react-swc": "^3.11.0",
+    "prop-types": "^15.8.1",
+    "puppeteer": "^24.36.1",
+    "vite": "^6.3.5"
+  }
+}

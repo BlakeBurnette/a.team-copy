@@ -1,0 +1,43 @@
+{
+  "name": "@payhive/app-switcher",
+  "version": "1.0.0",
+  "description": "Unified app switcher component for PayHive services",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts --external react",
+    "dev": "tsup src/index.tsx --format cjs,esm --dts --external react --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@payhive/sso-client": "file:../sso-client"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "app-switcher",
+    "payhive",
+    "hive"
+  ],
+  "license": "UNLICENSED",
+  "private": true
+}

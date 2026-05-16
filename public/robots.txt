@@ -1,0 +1,15 @@
+# https://www.robotstxt.org/robotstxt.html
+# Robots.txt for PayHive
+
+# Allow all search engines to crawl public pages
+User-agent: *
+Allow: /
+
+# Block authenticated app routes from indexing
+Disallow: /app/
+Disallow: /login
+Disallow: /signup
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://thepayhive.com/sitemap.xml
